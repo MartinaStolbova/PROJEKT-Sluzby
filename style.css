@@ -1,0 +1,103 @@
+html, body {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+        }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.Happy Traveler img {
+    /*margin: 35px 75px;*/
+    text-align: center;
+}
+h1 {
+    font-size: 37px;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1:after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #407BFF;
+    width:10%;
+    margin:20px auto;
+}
+
+hr {
+    color: #407BFF;
+    text-align: center;
+}
+******SEKCE SLUŽBY***********
+.Služby {
+    margin: 0 auto;
+}
+p {
+    font-size: 16px;
+    color:#8B8B8B;
+    text-indent: 1em;
+    /*margin:45px 20px;*/
+    text-align: center;
+
+}
+
+
+.Dobrodružství { 
+    display: block;
+    margin:0 auto;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #407BFF;
+    padding: 10px 30px;
+    width: calc(100%/5);
+}
+
+.Pláž {
+    display: block;
+    margin: 10px auto  0 auto;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color:#8B8B8B;
+    padding: 10px 40px;
+    width:calc(100%/4.5);
+
+}
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+    
+button {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    margin: 2em auto;
+    padding: 1.5em;
+    filter:drop-shadow(2px);
+    border-radius: 10px;
+    background-color: white;
+    border:2px solid #407BFF1F;
+    max-width: 100%;
+
+}
+button img {
+    flex: 1 1 20%;
+    align-items: flex-start;
+ 
+}    
+
+
+
+ 
+   

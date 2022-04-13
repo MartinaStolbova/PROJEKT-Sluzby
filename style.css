@@ -39,14 +39,14 @@ p {
     text-align: center;
  
 }
-.Odkazy {
+.odkazy {
     display:flex;
     flex-direction: column;
   
 }
 
-.Dobrodružství { 
-    display: block;
+.adventure { 
+    /*display: block;*/
     margin:10px auto;
     font-size: 14px;
     color: white;
@@ -58,8 +58,8 @@ p {
     width: calc(100%/5);
 }
 
-.Pláž {
-    display: block;
+.beach {
+   /*display: block;*/
     margin: 10px auto;
     font-size: 14px;
     color: white;
@@ -96,19 +96,22 @@ button img {
  
 }    
 
-@media screen and (min-width: 640px):{
-}
-.Odkazy {
+@media screen and (min-width: 640px) {
+   .odkazy {
     display:flex;
-    justify-content: center;
+    flex-direction: row;
     
-    
-    .button1 {
+     }
+     
+    .button1, .button2 {
         display: flex;
+    
+      
     }
 
-    .mapa,cactus,letadlo{
-        flex: 1 1 calc(100% / 3);
+    .mapa,.cactus,.letadlo,.palma,.umbrella,.karavan{
+       margin:20px;
+       
     }
 
 

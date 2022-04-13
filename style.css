@@ -2,18 +2,18 @@ html, body {
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-        }
-body{
     font-family: 'Montserrat', sans-serif;
-}
+        }
+
 .container {
     display: flex;
     justify-content: center;
+   
 }
 
-.Happy Traveler img {
-    /*margin: 35px 75px;*/
-    text-align: center;
+.Happy Traveler img{
+     max-width: 100%;
+     align-content: center;
 }
 h1 {
     font-size: 37px;
@@ -29,27 +29,25 @@ h1:after{
     margin:20px auto;
 }
 
-hr {
-    color: #407BFF;
-    text-align: center;
-}
+
 ******SEKCE SLUŽBY***********
-.Služby {
-    margin: 0 auto;
-}
+
 p {
     font-size: 16px;
     color:#8B8B8B;
     text-indent: 1em;
-    /*margin:45px 20px;*/
     text-align: center;
-
+ 
 }
-
+.Odkazy {
+    display:flex;
+    flex-direction: column;
+  
+}
 
 .Dobrodružství { 
     display: block;
-    margin:0 auto;
+    margin:10px auto;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -62,7 +60,7 @@ p {
 
 .Pláž {
     display: block;
-    margin: 10px auto  0 auto;
+    margin: 10px auto;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -80,8 +78,8 @@ h2 {
     
 button {
     display: flex;
-    align-content: space-around;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
     margin: 2em auto;
     padding: 1.5em;
     filter:drop-shadow(2px);
@@ -89,6 +87,7 @@ button {
     background-color: white;
     border:2px solid #407BFF1F;
     max-width: 100%;
+    color:#8B8B8B;
 
 }
 button img {
@@ -97,7 +96,21 @@ button img {
  
 }    
 
+@media screen and (min-width: 640px):{
+}
+.Odkazy {
+    display:flex;
+    justify-content: center;
+    
+    
+    .button1 {
+        display: flex;
+    }
+
+    .mapa,cactus,letadlo{
+        flex: 1 1 calc(100% / 3);
+    }
 
 
  
-   
+}

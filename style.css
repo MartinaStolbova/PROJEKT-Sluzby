@@ -12,7 +12,7 @@ html, body {
    
 }
 
-.Happy Traveler img{
+.happy Traveler img{
      max-width: 100%;
      align-content: center;
 }
@@ -125,5 +125,28 @@ button img {
  
 }
 @media screen and (min-width: 1110px)  {
+
+    body {
+        width: 1040px;
+        
+    }
+    .hlavicka {
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1 1 50%;
+    }
+
+    h1 {
+        justify-self: flex-start;
+    }
+
+    .agency { 
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
+    .guide {
+        display: flex;
+    }
     
 }

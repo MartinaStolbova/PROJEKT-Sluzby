@@ -103,7 +103,7 @@ button img {
     
      }
      .beach, .adventure{
-        
+        justify-content: center;
      }
     .button1, .button2 {
         display: flex;
@@ -111,7 +111,8 @@ button img {
     }
 
     .mapa,.cactus,.letadlo,.palma,.umbrella,.karavan{
-        margin:20px;
+        margin:5px;
+        flex: 1 1 calc(100% / 3);
     }
     
     button {
@@ -120,4 +121,7 @@ button img {
         
     }
  
+}
+@media screen and (min-width: 1110px)  {
+    
 }

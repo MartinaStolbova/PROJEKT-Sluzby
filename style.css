@@ -102,18 +102,22 @@ button img {
     flex-direction: row;
     
      }
-     
+     .beach, .adventure{
+        
+     }
     .button1, .button2 {
         display: flex;
-    
-      
+        justify-content: center; 
     }
 
     .mapa,.cactus,.letadlo,.palma,.umbrella,.karavan{
-       margin:20px;
-       
+        margin:20px;
     }
-
-
+    
+    button {
+        flex-direction: column;
+        align-items: center;
+        
+    }
  
 }

@@ -5,11 +5,10 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
         }
-
+/*******Hlavicka********/
 .container {
     display: flex;
     justify-content: center;
-   
 }
 
 .happy Traveler img{
@@ -38,17 +37,17 @@ p {
     color:#8B8B8B;
     text-indent: 1em;
     text-align: justify;
- 
-}
-.odkazy {
-    display:flex;
-    flex-direction: column;
-  
 }
 
-.adventure { 
+.odkazy {
+display: flex;
+flex-direction: column;  
+ }
+
+ .adventure { 
     /*display: block;*/
     margin:10px auto;
+    padding: 10px 30px;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -56,11 +55,11 @@ p {
     text-decoration: none;
     background-color: #407BFF;
     padding: 10px 30px;
-    width: calc(100%/5);
 }
 
 .beach {
    /*display: block;*/
+    padding: 10px 30px;
     margin: 10px auto;
     font-size: 14px;
     color: white;
@@ -69,84 +68,108 @@ p {
     text-decoration: none;
     background-color:#8B8B8B;
     padding: 10px 40px;
-    width:calc(100%/4.5);
-
 }
+
+/*******Specializaze***********/
 h2 {
     font-size: 16px;
     text-align: center;
 }
     
 button {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
     margin: 2em auto;
     padding: 1.5em;
-    filter:drop-shadow(2px);
+    filter: drop-shadow (0px 4px 6px #407BFF1F);
     border-radius: 10px;
     background-color: white;
     border:2px solid #407BFF1F;
-    max-width: 100%;
+    max-width:460px;
     color:#8B8B8B;
-
-}
-button img {
-    flex: 1 1 20%;
-    align-items: flex-start;
- 
 }    
-
+/***********640px************/
 @media screen and (min-width: 640px) {
    .odkazy {
     display:flex;
     flex-direction: row;
-    
      }
-     .beach, .adventure{
-        justify-content: center;
-        flex:0 0 calc(100% / 4)
+
+     .adventure, .beach {
+         padding:auto 20px;
      }
+
     .button1, .button2 {
         display: flex;
-        justify-content: center; 
+     
     }
 
-    .mapa,.cactus,.letadlo,.palma,.umbrella,.karavan{
-        margin:5px;
-        flex: 1 1 calc(100% / 3);
-    }
-    
     button {
         flex-direction: column;
-        align-items: center;
-        
+        flex: 1 1 calc(100% / 3);
+        margin:20px;
+        max-width: 230px;
     }
  
 }
-@media screen and (min-width: 1110px)  {
 
+/**********1110px**********/
+
+@media screen and (min-width: 1110px)  {
     body {
-        width: 1040px;
-        
+        max-width: 1040px;
+        margin:0 auto;
     }
     .hlavicka {
         display: flex;
         flex-direction: row-reverse;
+        max-width: 1040px;
+    }
+ .happy Traveler img {
+     max-width: 490px;
+ }
+    .container, .polovina {
         flex: 1 1 50%;
     }
 
-    h1 {
-        justify-self: flex-start;
+    
+    .polovina {
+        max-width: 490px;
+        display: flex;
+        flex-direction: column;
+    }
+    h1::after, h1 {
+        text-align: left;
+    }
+    h2 {
+        margin-top: 80px;
     }
 
+    .text1, text2 {
+        max-width: 430px;
+    }
     .agency { 
         display: flex;
         flex-direction: row-reverse;
-    
     }
+    
     .guide {
         display: flex;
     }
-    
+     
+
+    button {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(50% + 60px)
+        max-width: 170px;
+    }
+
+    .text1 {
+        margin-left: 60px;
+    }
+
+    .text2 {
+        margin-right: 60px;
+    }
+
 }

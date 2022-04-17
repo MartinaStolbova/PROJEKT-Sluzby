@@ -30,7 +30,7 @@ h1:after{
 }
 
 
-******SEKCE SLUŽBY***********
+/******SEKCE SLUŽBY***********/
 
 p {
     font-size: 16px;
@@ -74,19 +74,40 @@ flex-direction: column;
 h2 {
     font-size: 16px;
     text-align: center;
+    margin-top: 80px;
 }
-    
-button {
-    text-align: center;
-    margin: 2em auto;
-    padding: 1.5em;
-    filter: drop-shadow (0px 4px 6px #407BFF1F);
+
+.nabidka1,.nabidka2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+
+}
+  
+.trip {
+    display: flex;
+    align-items:center;
+    border: 1px solid #407BFF1F;
+    box-shadow:0 4px 6px #407BFF1F;
     border-radius: 10px;
-    background-color: white;
-    border:2px solid #407BFF1F;
-    max-width:460px;
-    color:#8B8B8B;
-}    
+    max-width: 460px;
+  
+}
+
+
+.trip p {
+    font-size: 13px;
+    text-indent: 0;
+    margin: 30px 20px 20px 0;
+      }
+
+.icon {
+ padding: 20px;
+
+}   
+    
+  
 /***********640px************/
 @media screen and (min-width: 640px) {
    .odkazy {
@@ -98,23 +119,29 @@ button {
          padding:auto 20px;
      }
 
-    .button1, .button2 {
-        display: flex;
-     
+    .nabidka1,.nabidka2 {
+        flex-direction: row;
     }
 
-    button {
-        flex-direction: column;
+    .trip {
         flex: 1 1 calc(100% / 3);
-        margin:20px;
         max-width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
     }
- 
-}
+    .trip p {
+        margin: 0 15px 20px 15px;
+        text-align: center;
+    }
+    .icon {
+        padding: 40px 95px 20px 95px;
+    }
+    }
 
 /**********1110px**********/
 
-@media screen and (min-width: 1110px)  {
+    @media screen and (min-width: 1110px)  {
     body {
         max-width: 1040px;
         margin:0 auto;
@@ -124,28 +151,27 @@ button {
         flex-direction: row-reverse;
         max-width: 1040px;
     }
- .happy Traveler img {
+    .happy Traveler img {
      max-width: 490px;
- }
+    }
     .container, .polovina {
         flex: 1 1 50%;
     }
 
-    
     .polovina {
         max-width: 490px;
         display: flex;
         flex-direction: column;
     }
-    h1::after, h1 {
+   
+    h1{
         text-align: left;
     }
-    h2 {
-        margin-top: 80px;
+    h1:after {
+        margin-left: 0;
     }
-
-    .text1, text2 {
-        max-width: 430px;
+    h2 {
+        text-align: left;
     }
     .agency { 
         display: flex;
@@ -153,23 +179,40 @@ button {
     }
     
     .guide {
-        display: flex;
+        display: flex;  
     }
-     
+    
 
-    button {
+    .nabidka1{    
         display: flex;
-        flex-direction: column;
-        flex: 1 1 calc(50% + 60px)
+        flex: 1 1 (50% + 60px);
+     
+    }
+
+    .trip {
         max-width: 170px;
     }
-
+      
+    .trip p {
+        margin: 0 15px 40px 15px;
+    }
+    .icon {
+        padding: 40px 60px 30px 60px;
+    }
+    .nabidka1{
+        margin: 80px 0;
+    }
+    p {
+        text-indent: 0;
+    }
     .text1 {
-        margin-left: 60px;
+        margin: 80px auto 60px 80px;
+        max-width: 430px;
     }
-
     .text2 {
-        margin-right: 60px;
+        margin: 0 60px auto auto;
     }
+    
 
-}
+    }
+     

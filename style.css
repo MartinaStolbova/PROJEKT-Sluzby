@@ -1,6 +1,6 @@
 html, body {
     margin:0px;
-    padding: 20px;
+    padding: 60px 20px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -54,7 +54,7 @@ flex-direction: column;
     border-radius: 20px;
     text-decoration: none;
     background-color: #407BFF;
-    padding: 10px 30px;
+
 }
 
 .beach {
@@ -67,7 +67,7 @@ flex-direction: column;
     border-radius: 20px;
     text-decoration: none;
     background-color:#8B8B8B;
-    padding: 10px 40px;
+   
 }
 
 /*******Specializaze***********/
@@ -88,10 +88,11 @@ h2 {
 .trip {
     display: flex;
     align-items:center;
+    justify-content: center;
     border: 1px solid #407BFF1F;
     box-shadow:0 4px 6px #407BFF1F;
     border-radius: 10px;
-    max-width: 460px;
+    /*max-width: 460px;*/
   
 }
 
